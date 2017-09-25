@@ -51,7 +51,7 @@ public class ItemsResource {
     }
 
     @GET
-    @Path("{id}")
+    @Path("/find/{id}")
     public Response find(@PathParam("id") Long id){
         Item item = fooStorage.get(id);
         
