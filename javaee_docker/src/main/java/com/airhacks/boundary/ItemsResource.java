@@ -67,8 +67,7 @@ public class ItemsResource {
     @DELETE
     @Path("{id}")
     public Response delete(@PathParam("id") Long id){
-        fooStorage.remove(id);
-        
+        fooStorage.remove(id);        
         return Response.noContent().build();
     }
 }
